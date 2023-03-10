@@ -38,13 +38,13 @@
 2. Travel Advisor Hotel's API
  https://rapidapi.com/apidojo/api/travel-advisor
 3. Geocoding API
- [https://rapidapi.com/trueway/api/trueway-geocoding]
+ https://rapidapi.com/trueway/api/trueway-geocoding
 4. WhatsApp Business API Twilio
- [https://www.twilio.com/whatsapp]
+ https://www.twilio.com/whatsapp
 5. NodeMailer
- [https://github.com/nodemailer/nodemailer]
+ https://github.com/nodemailer/nodemailer
 6. Stripe Payment Gateway
- [https://dashboard.stripe.com/test/payments]
+ https://dashboard.stripe.com/test/payments
 
 # Architecture
 ![image](https://user-images.githubusercontent.com/93976634/224277552-7d12ae9a-5763-4c58-888a-aeec4d98af11.png)
