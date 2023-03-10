@@ -4,7 +4,7 @@ PROBLEM STATEMENT
 1. Voice Based Travel Booking()
 2. 5ireLabs Build Track()
 
-# Team Members 
+#Team Members 
 1. Ajay Singh 
 2. Kumari Ladli 
 3. Vikram Reniwal
@@ -18,6 +18,7 @@ PROBLEM STATEMENT
 5. After successful payment he will be informed about the booking status whether it is booked or failed.
 
 #SOLUTION
+
 #To implement an Application that allows users to book a hotel ticket using voice commands, we are following these steps:
 1. For prototyping and saving time, Instead of building our own NLP model. We’ll be using Google Speech-to-text API via react-speech-recognition.
 2. When a user initiates the booking process, the application will ask for their travel details, such as the origin, destination, travel date, number of guests, etc.
