@@ -1,7 +1,7 @@
 # Innerve-7 
 
 ## PROBLEM STATEMENT
-1. Voice Based Travel Booking(Problem Statement by udChalo)
+1. Voice Based Travel Booking(Sponsored Problem Statement - UdChalo)
 2. 5ireLabs Build Track(Deploy using 5ire EVM network )
 
 ## Team Member 
