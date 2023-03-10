@@ -2,7 +2,7 @@
 
 ## PROBLEM STATEMENT
 1. Voice Based Travel Booking(Problem Statement by udChalo)
-2. 5ireLabs Build Track()
+2. 5ireLabs Build Track(Deploy using 5ire EVM network )
 
 ## Team Member 
 1. Ajay Singh
