@@ -1,0 +1,21 @@
+.display-body{
+    display: flex;
+    width: 100%;
+    
+    margin-top: -100px;
+}
+.sampleCommands{
+    width: 50%;
+    /* background-color: blue; */
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-inputForm{
+    width: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

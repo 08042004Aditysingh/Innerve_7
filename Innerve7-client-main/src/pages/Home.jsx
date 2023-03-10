@@ -1,20 +1,21 @@
 import React from 'react'
-import Commands from '../components/Commands'
-import Form from '../components/Form'
 import '../styles/pages/home.css'
+import Landing from '../components/Landing'
+import Display from '../components/Display'
 
-function Home() {
+export default function Home() {
+
+  const [isTrue, setIsTrue] = React.useState(false)
+
+  function handleTrue(){
+    setIsTrue( prevIsTrue => !prevIsTrue)
+  }
+
   return (
     <div className='homepage'>
-      <div className='sampleCommands'>
-        <Commands/>
-      </div>
-      <div className='home-inputForm'>
-        <Form/>
-      </div>
+        {isTrue?<Display/> : <Landing state = {handleTrue}/>}
     </div>
   )
 }
 
-export default Home 
 

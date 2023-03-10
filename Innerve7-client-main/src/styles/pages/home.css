@@ -1,7 +1,6 @@
 .homepage{
     display: flex;
- 
-    height: 100vh;
+    height: 100vh --150px;
 }
 .sampleCommands{
     width: 50%;
