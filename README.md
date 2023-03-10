@@ -28,23 +28,35 @@
 6. After the payment is completed, the Application will inform the user whether the booking was successful or not. If there are any issues with the booking, such as a lack of availability or a problem with the payment, the application will provide clear and helpful feedback to the user.
 7. Overall, the key to building a successful voice-based hotel booking application is to make the user experience as smooth and intuitive as possible.
 
-# Tech-Stack
-# Client : ReactJs
-# Server : NodeJS, ExpressJs
-# Database : MySQL
+## Tech-Stack
+## Client : ReactJs
+## Server : NodeJS, ExpressJs
+## Database : MySQL
  APIs and Packages
-1. react-speech-recognition
- https://www.npmjs.com/package/react-speech-recognition
-2. Travel Advisor Hotel's API
- https://rapidapi.com/apidojo/api/travel-advisor
-3. Geocoding API
- https://rapidapi.com/trueway/api/trueway-geocoding
-4. WhatsApp Business API Twilio
- https://www.twilio.com/whatsapp
-5. NodeMailer
- https://github.com/nodemailer/nodemailer
-6. Stripe Payment Gateway
- https://dashboard.stripe.com/test/payments
+1) react-speech-recognition
+```
+https://www.npmjs.com/package/react-speech-recognition
+```
+2) Travel Advisor Hotel's API
+```
+https://rapidapi.com/apidojo/api/travel-advisor
+```
+3) Geocoding API 
+```
+https://rapidapi.com/trueway/api/trueway-geocoding
+```
+4) WhatsApp Business API Twilio
+```
+https://www.twilio.com/whatsapp
+```
+5) NodeMailer 
+```
+https://github.com/nodemailer/nodemailer
+```
+6) Stripe Payment Gateway
+```
+https://dashboard.stripe.com/test/payments
+```
 
 # Architecture
 ![image](https://user-images.githubusercontent.com/93976634/224277552-7d12ae9a-5763-4c58-888a-aeec4d98af11.png)
