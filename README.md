@@ -29,9 +29,9 @@
 7. Overall, the key to building a successful voice-based hotel booking application is to make the user experience as smooth and intuitive as possible.
 
 # Tech-Stack
- Client : ReactJs
- Server : NodeJS, ExpressJs
- Database : MySQL
+# Client : ReactJs
+# Server : NodeJS, ExpressJs
+# Database : MySQL
  APIs and Packages
 1. react-speech-recognition
  https://www.npmjs.com/package/react-speech-recognition
