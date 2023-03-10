@@ -231,7 +231,7 @@ function Form() {
         <div className='input-form'>
             <form onSubmit={handleSubmit} className="formContainer">
                 <div>
-                    <label htmlFor="firstName">First Name:</label>
+                    <label htmlFor="firstName">Name:</label>
                     <input type="text" id="firstName" placeholder="(Ex. firstName...)" ref={firstNameRef} value={firstNameRef.current?.value} />
                 </div>
                 {/* <div>
