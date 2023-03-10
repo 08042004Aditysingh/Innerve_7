@@ -34,9 +34,9 @@
 # Database : MySQL
 # APIs and Packages
 1. react-speech-recognition
- [https://www.npmjs.com/package/react-speech-recognition]
+ https://www.npmjs.com/package/react-speech-recognition
 2. Travel Advisor Hotel's API
- [https://rapidapi.com/apidojo/api/travel-advisor]
+ https://rapidapi.com/apidojo/api/travel-advisor
 3. Geocoding API
  [https://rapidapi.com/trueway/api/trueway-geocoding]
 4. WhatsApp Business API Twilio
