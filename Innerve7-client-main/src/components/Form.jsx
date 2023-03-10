@@ -9,13 +9,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Form() {
     const firstNameRef = useRef();
-    const lastNameRef = useRef();
-    const ageRef = useRef();
-    const originRef = useRef();
     const destinationRef = useRef();
     const checkIndateRef = useRef();
-    const checkOutdateRef = useRef();
-    const travelDateRef = useRef();
     const noOfGuestsRef = useRef();
     const phoneNoRef = useRef();
     const emailAddressRef = useRef();
@@ -45,13 +40,8 @@ function Form() {
 
         // perform validation
         const firstName = firstNameRef.current.value.trim();
-        // const lastName = lastNameRef.current.value.trim();
-        // const origin = originRef.current.value.trim();
-        // const age = ageRef.current.value.trim();
         const Destination = destinationRef.current.value.trim();
-        // const travelDate = travelDateRef.current.value.trim();
         const checkInDate = checkIndateRef.current.value.trim();
-        // const checkOutDate = checkOutdateRef.current.value.trim();
         const NoOfGuests = noOfGuestsRef.current.value.trim();
         const PhoneNo = phoneNoRef.current.value.trim();
         const EmailAddress = emailAddressRef.current.value.trim();
@@ -60,35 +50,14 @@ function Form() {
             alert('Please enter your first name.');
             return;
         }
-        // if (lastName === '') {
-        //     alert('Please enter your last Name.');
-        //     return;
-        // }
-        // if (age === '') {
-        //     alert('Please enter your age');
-        //     return;
-        // }
-        // if (origin === '') {
-        //     alert('Please enter the origin.');
-        //     return;
-        // }
         if (Destination === '') {
             alert('Please enter the Destination.');
             return;
         }
-
-        // if (travelDate === '') {
-        //     alert('Please enter the travel Date.');
-        //     return;
-        // }
         if (checkInDate === '') {
             alert('Please enter the check In Date.');
             return;
         }
-        // if (checkOutDate === '') {
-        //     alert('Please enter the check Out Date.');
-        //     return;
-        // }
         if (NoOfGuests === '') {
             alert('Please enter the No Of Guests.');
             return;
@@ -167,40 +136,14 @@ function Form() {
                 firstNameRef.current.value = username
             }
         },
-        // {
-        //     command: 'My Last name is *',
-        //     callback: (username2) => {
-        //         console.log(username2);
-        //         lastNameRef.current.value = username2
-        //     }
-        // },
-        // {
-        //     command: 'I am * years old',
-        //     callback: (userage) => {
-        //         console.log(userage);
-        //         ageRef.current.value = userage
-        //     }
-        // },
-        // {
-        //     command: 'I want to go from *',
-        //     callback: (userOrigin) => originRef.current.value = userOrigin
-        // },
         {
             command: 'I want to go to *',
             callback: (userDestination) => destinationRef.current.value = userDestination
         },
-        // {
-        //     command: 'I have a ticket on *',
-        //     callback: (userTravelDate) => travelDateRef.current.value = userTravelDate
-        // },
         {
             command: 'I want to book hotel from *',
             callback: (userTravelDate1) => checkIndateRef.current.value = userTravelDate1
         },
-        // {
-        //     command: 'Till *',
-        //     callback: (userTravelDate2) => checkOutdateRef.current.value = userTravelDate2
-        // },
         {
             command: 'we are * people',
             callback: (userGuest) => noOfGuestsRef.current.value = userGuest
@@ -228,71 +171,46 @@ function Form() {
     }, [])
 
     return (
-        <div className='input-form'>
-            <form onSubmit={handleSubmit} className="formContainer">
-                <div>
-                    <label htmlFor="firstName">Name:</label>
-                    <input type="text" id="firstName" placeholder="(Ex. firstName...)" ref={firstNameRef} value={firstNameRef.current?.value} />
-                </div>
-                {/* <div>
-                    <label htmlFor="lastName">Last Name:</label>
-                    <input type="text" id="lastName" placeholder="(Ex. lastName...)" ref={lastNameRef} value={lastNameRef.current?.value} />
-                </div> */}
-                {/* <div>
-                    <label htmlFor="age">Age:</label>
-                    <input type="number" id="age" placeholder="(Ex. age...)" ref={ageRef} value={ageRef.current?.value} />
-                </div> */}
-
-                {/* <div>
-                    <label htmlFor="origin">Origin:</label>
-                    <input type="text" id="Origin" placeholder="(Ex. starting point...)" ref={originRef} value={originRef.current?.value} />
-                </div> */}
-
-                <div>
-                    <label htmlFor="destination">Destination:</label>
-                    <input type="text" id="Destination" placeholder="(Ex. End point...)" ref={destinationRef} value={destinationRef.current?.value} />
-                </div>
-
-                {/* <div>
-                    <label htmlFor="travelDate">Travel Date:</label>
-                    <input type="" id="travelDate" placeholder="(Ex. travelDate...)" ref={travelDateRef} value={travelDateRef.current?.value} />
-                </div> */}
-                <div>
-                    <label htmlFor="checkInDate">Hotel Check-In Date:</label>
-                    <input type="" id="checkInDate" placeholder="(Ex. check In Date...)" ref={checkIndateRef} value={checkIndateRef.current?.value} />
-                </div>
-                {/* <div>
-                    <label htmlFor="checkOutDate">Hotel Check-Out Date:</label>
-                    <input type="" id="checkOutDate" placeholder="(Ex. check Out Date...)" ref={checkOutdateRef} value={checkOutdateRef.current?.value} />
-                </div> */}
-                <div>
-                    <label htmlFor="noOfGuests">No. of Guests:</label>
-                    <input type="number" id="NoOfGuests" placeholder="(Ex. NoOfGuests...)" ref={noOfGuestsRef} value={noOfGuestsRef.current?.value} />
-                </div>
-
-                {/* <div>
-                    <label htmlFor="noOfGuests">No. of Guests:</label>
-                    <input type="number" id="NoOfGuests" placeholder="(Ex. NoOfGuests...)" ref={noOfGuestsRef} value={noOfGuestInnumeric} />
-                </div>   */}
-
-                <div>
-                    <label htmlFor="phoneNo">Phone No.:</label>
-                    <input type="tel" id="PhoneNo" placeholder="(Ex. PhoneNo...)" ref={phoneNoRef} value={phoneNoRef.current?.value} />
-                </div>
-
-                <div>
-                    <label htmlFor="emailAddress">Email Address:</label>
-                    <input type="" id="EmailAddress" placeholder="(Ex. ajaysingh1234@gmail....)" ref={emailAddressRef} value={emailAddressRef.current?.value} />
-                </div>
-                <button type="submit">Submit</button>
-                <FormGroup>
-                    <FormControlLabel
-                        control={<IOSSwitch sx={{ m: 1 }} />}
-                        label="Mic"
-                        checked={checked} onClick={clickedmic}
-                    />
-                </FormGroup>
-            </form>
+        <div className='mainhome-both'>
+            <div>
+                {transcript}
+            </div>
+            <div className='input-form'>
+                <form onSubmit={handleSubmit} className="formContainer">
+                    <div>
+                        <label htmlFor="firstName">Name:</label>
+                        <input type="text" id="firstName" placeholder="(Ex. firstName...)" ref={firstNameRef} value={firstNameRef.current?.value} />
+                    </div>
+                    <div>
+                        <label htmlFor="destination">Destination:</label>
+                        <input type="text" id="Destination" placeholder="(Ex. End point...)" ref={destinationRef} value={destinationRef.current?.value} />
+                    </div>
+                    <div>
+                        <label htmlFor="checkInDate">Hotel Check-In Date:</label>
+                        <input type="" id="checkInDate" placeholder="(Ex. check In Date...)" ref={checkIndateRef} value={checkIndateRef.current?.value} />
+                    </div>
+                    <div>
+                        <label htmlFor="noOfGuests">No. of Guests:</label>
+                        <input type="number" id="NoOfGuests" placeholder="(Ex. NoOfGuests...)" ref={noOfGuestsRef} value={noOfGuestsRef.current?.value} />
+                    </div>
+                    <div>
+                        <label htmlFor="phoneNo">Phone No.:</label>
+                        <input type="tel" id="PhoneNo" placeholder="(Ex. PhoneNo...)" ref={phoneNoRef} value={phoneNoRef.current?.value} />
+                    </div>
+                    <div>
+                        <label htmlFor="emailAddress">Email Address:</label>
+                        <input type="" id="EmailAddress" placeholder="(Ex. ajaysingh1234@gmail....)" ref={emailAddressRef} value={emailAddressRef.current?.value} />
+                    </div>
+                    <button type="submit">Submit</button>
+                    <FormGroup>
+                        <FormControlLabel
+                            control={<IOSSwitch sx={{ m: 1 }} />}
+                            label="Mic"
+                            checked={checked} onClick={clickedmic}
+                        />
+                    </FormGroup>
+                </form>
+            </div>
         </div>
     );
 }
