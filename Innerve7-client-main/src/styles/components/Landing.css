@@ -1,5 +1,5 @@
 .purple{
-    color: #655dbb;
+    color: white;
 
     font-size: 128px;
     font-weight: 100;
@@ -13,7 +13,7 @@
     font-size: 40px;
     font-weight: 400;
     font-family: 'Courgette', cursive;
-    color: #180ab1;
+    color: white;
 }
 
 .landing-text{
@@ -51,7 +51,8 @@ margin-top: 50px;
     margin-left: 10%;
 
     margin-top: 0px;
-    background-color:  #140895;
+    font-size: 20px;
+    background-color:  #1408955e;
 }
 
 .landing-btn:hover{
