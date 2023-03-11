@@ -69,10 +69,6 @@ function Hotels() {
                         // latitude: '18.5204',
                         // longitude: '73.8567',
                         lang: 'en_US',
-                        limit: '30',
-                        adults: adults,
-                        checkin: checkInDate,
-                        nights: '2'
                     },
                     headers: {
                         'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_API_KEY,
@@ -86,11 +82,10 @@ function Hotels() {
             } catch (error) {
                 console.error(error);
                 setLoading(false);
-                <ErorComponent />
             }
         };
         fetchHotels();
-    }, [lat, lon, adults, checkInDate]);
+    }, [lat, lon]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
