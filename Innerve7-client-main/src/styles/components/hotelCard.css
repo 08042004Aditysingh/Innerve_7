@@ -21,6 +21,7 @@ a {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
 .hotel-card-first {
@@ -29,6 +30,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 0.5px solid black;
 }
 
 .hotel-card-first img {
@@ -43,6 +45,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .hotel-card-third {
