@@ -69,10 +69,6 @@ function Hotels() {
                         // latitude: '18.5204',
                         // longitude: '73.8567',
                         lang: 'en_US',
-                        limit: '30',
-                        adults: adults,
-                        checkin: checkInDate,
-                        nights: '2'
                     },
                     headers: {
                         'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_API_KEY,
@@ -86,11 +82,10 @@ function Hotels() {
             } catch (error) {
                 console.error(error);
                 setLoading(false);
-                <ErorComponent />
             }
         };
         fetchHotels();
-    }, [lat, lon, adults, checkInDate]);
+    }, [lat, lon]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -112,9 +107,9 @@ function Hotels() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                // height: '100vh',
                 width: 'auto',
-                background: '#f8f8f8'
+                fontWeight: 'bold',
+                color: 'white'
             }}>
                 <h1>Welcome {firstName}, Here is the List of Hotels in {location}</h1>
             </div>
@@ -160,9 +155,12 @@ function Hotels() {
                 position: "fixed",
                 bottom: 50,
                 right: 50,
-                "z-index": 9999,
+                "zIndex": 9999,
                 background: "#ECEBEB",
-                "border-radius": "10px"
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                borderWidth: "2px",
+                borderColor: "#000000",
             }}>
                 <div style={{
                     fontSize: "30px",
@@ -177,9 +175,9 @@ function Hotels() {
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="phoneNo" style={{
-                            "font-size": "14px",
-                            "font-weight": "bold",
-                            "margin-bottom": "5px",
+                            "fontSize": "14px",
+                            "fontWeight": "bold",
+                            "marginBottom": "5px",
                             "paddingRight": "40px",
                             "paddingLeft": "20px",
                             "paddingTop": "20px"
@@ -187,17 +185,17 @@ function Hotels() {
                         <input type="tel" id="PhoneNo" placeholder="(Ex. PhoneNo...)" value={phoneNumber} style={{
                             "padding": "5px",
                             "border": "1px solid #ccc",
-                            "border-radius": "3px",
+                            "borderRadius": "3px",
                             "width": "200px",
-                            "font-size": "14px",
+                            "fontSize": "14px",
                             marginRight: "10px"
                         }} />
                     </div>
                     <div>
                         <label htmlFor="emailAddress" style={{
-                            "font-size": "14px",
-                            "font-weight": "bold",
-                            "margin-bottom": "5px",
+                            "fontSize": "14px",
+                            "fontWeight": "bold",
+                            "marginBottom": "5px",
                             "paddingRight": "13px",
                             "paddingLeft": "20px",
                             "paddingTop": "20px"
@@ -205,18 +203,18 @@ function Hotels() {
                         <input type="email" id="EmailAddress" placeholder="(Ex. ajaysingh1234@gmail....)" value={newuserEmail} style={{
                             "padding": "5px",
                             "border": "1px solid #ccc",
-                            "border-radius": "3px",
+                            "borderRadius": "3px",
                             "width": "200px",
-                            "font-size": "14px",
+                            "fontSize": "14px",
                             marginRight: "10px"
 
                         }} />
                     </div>
                     <div>
                         <label htmlFor="phoneNo" style={{
-                            "font-size": "14px",
-                            "font-weight": "bold",
-                            "margin-bottom": "5px",
+                            "fontSize": "14px",
+                            "fontWeight": "bold",
+                            "marginBottom": "5px",
                             "paddingRight": "40px",
                             "paddingLeft": "27.5px",
                             "paddingTop": "20px"
@@ -224,9 +222,9 @@ function Hotels() {
                         <input type="text" id="Location" placeholder="(Ex. Delhi...)" value={location} style={{
                             "padding": "5px",
                             "border": "1px solid #ccc",
-                            "border-radius": "3px",
+                            "borderRadius": "3px",
                             "width": "200px",
-                            "font-size": "14px",
+                            "fontSize": "14px",
                             marginRight: "10px"
                         }} />
                     </div>
