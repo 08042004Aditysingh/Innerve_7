@@ -23,9 +23,11 @@ function Payment() {
     }
     return (
         <div style={{
-            background: '#f8f8f8',
+            background: 'transparent',
+            'font-family': 'Quicksand',
             display: 'flex',
-            'flex-direction': 'column'
+            'flex-direction': 'column',
+            
         }}>
             <h1>Book your hotel with Udchalein</h1>
             {showItem ? (<StripeContainer />) : (
