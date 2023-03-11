@@ -176,7 +176,7 @@ function Form() {
                 {transcript}
             </div>
             <div className='input-form'>
-            {/* <p className='form-title'>Enter Your Details Here!</p> */}
+             <p className='form-title'>Enter Your Details Here!</p> 
                 <form onSubmit={handleSubmit} className="formContainer">
                     <div>
                         <label htmlFor="firstName">Name:</label>
